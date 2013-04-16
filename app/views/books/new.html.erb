@@ -1,0 +1,12 @@
+<%= form_for(@book) do |form| %>
+    <h1>Add new Book</h1>
+      <p>
+        <%= form.label :title %>    <br/>
+        <%= form.text_field :title %>
+      </p>
+    <p>
+      <%= form.label :thoughts %> <br/>
+      <%= form.text_area :thoughts %>
+    </p>
+    <%= form.submit %>
+<% end %>
